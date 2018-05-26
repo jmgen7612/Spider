@@ -1,0 +1,1 @@
+#!/usr/bin/env python3# -*- coding: utf-8 -*-#@file   :test.py#@time   :2018/5/26 20:15#@Author :jmgen#@Version:1.0#@Desc   :import datetimetimeStamp1 = 1381419600timeStamp2 = 1527229260000rr = datetime.datetime.utcfromtimestamp(timeStamp2/1000).strftime("%Y-%m-%d %H:%M:%S")
