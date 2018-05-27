@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3430cd9-39a4-4fb8-bc18-94d08d1bc0b0" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/DataOutput.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/HtmlDownloader.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/HtmlParser.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/SeleniumDemo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/SpiderMan.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/DynamicSpider/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayOne/SeleniumWay.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayThree/DataOutput.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayThree/HtmlParser.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayThree/OutputExcel.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayTwo/DataOutput.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayTwo/HtmlDownloader.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/LagouSpider/wayTwo/SpiderMan.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/LagouSpider.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/PhantomjsDemo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/Redemo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/lagouspiderdemo.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/netmonitor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpiderDemo/test.py" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BaseSpider/DataOutput.py" afterPath="$PROJECT_DIR$/BaseSpider/DataOutput.py" />
-      <change beforePath="$PROJECT_DIR$/BaseSpider/HtmlParser.py" afterPath="$PROJECT_DIR$/BaseSpider/HtmlParser.py" />
-      <change beforePath="$PROJECT_DIR$/BaseSpider/SpiderMan.py" afterPath="$PROJECT_DIR$/BaseSpider/SpiderMan.py" />
-      <change beforePath="$PROJECT_DIR$/BaseSpider/baike.html" afterPath="$PROJECT_DIR$/BaseSpider/baike.html" />
-      <change beforePath="$PROJECT_DIR$/BaseSpider/baike2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DistributedSpider/ControlNode/baike_2018_05_25_00_56_21.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/LagouSpider/WayThree/DataOutput.py" afterPath="$PROJECT_DIR$/LagouSpider/WayThree/DataOutput.py" />
-      <change beforePath="$PROJECT_DIR$/LagouSpider/WayThree/HtmlParser.py" afterPath="$PROJECT_DIR$/LagouSpider/WayThree/HtmlParser.py" />
-      <change beforePath="$PROJECT_DIR$/LagouSpider/WayThree/SpiderMan.py" afterPath="$PROJECT_DIR$/LagouSpider/wayThree/SpiderMan.py" />
-      <change beforePath="$PROJECT_DIR$/LagouSpider/wayTwo/HtmlParser.py" afterPath="$PROJECT_DIR$/LagouSpider/wayTwo/HtmlParser.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -99,11 +70,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlParser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HtmlParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LagouSpider/wayThree/HtmlParser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1540">
               <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -171,12 +152,12 @@
         <option value="$PROJECT_DIR$/SpiderDemo/LagouSpider.py" />
         <option value="$PROJECT_DIR$/LagouSpider/WayThree/DataOutput.py" />
         <option value="$PROJECT_DIR$/LagouSpider/WayThree/HtmlParser.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/LagouSpider/wayThree/OutputExcel.py" />
         <option value="$PROJECT_DIR$/LagouSpider/wayThree/DataOutput.py" />
         <option value="$PROJECT_DIR$/LagouSpider/wayThree/SpiderMan.py" />
         <option value="$PROJECT_DIR$/LagouSpider/wayThree/HtmlParser.py" />
         <option value="$PROJECT_DIR$/LagouSpider/wayTwo/HtmlParser.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -186,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="334" />
     <option name="y" value="170" />
     <option name="width" value="1368" />
@@ -416,7 +397,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -424,7 +405,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8720721" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26024956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3114504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -850,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-838">
-          <caret line="77" column="27" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -919,6 +892,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1540">
           <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
           <folding />
         </state>
       </provider>
