@@ -1,1 +1,1 @@
-#!/usr/bin/env python3# -*- coding: utf-8 -*-#@file   :HtmlDownloader.py#@time   :2018/5/26 2:00#@Author :jmgen#@Version:1.0#@Desc   :
+#!/usr/bin/env python3# -*- coding: utf-8 -*-#@file   :HtmlDownloader.py#@time   :2018/5/26 2:00#@Author :jmgen#@Version:1.0#@Desc   :import requestsclass HtmlDownloader(object):    def download(self,url,headers):        if url is None:            return None        r = requests.get(url,headers=headers)        if r.status_code==200:            r.encoding='utf-8'            return r.text        return None

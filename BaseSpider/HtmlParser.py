@@ -34,6 +34,9 @@ class HtmlParser(object):
         #2017-07-03 更新,原因百度词条的链接形式发生改变
         links = soup.find_all('a', href=re.compile(r'/item/.*'))
         for link in links:
+            print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+            print(link)
+            print(link['href'])
             #提取href属性
             new_url = urllib.parse.unquote(link['href'])
             #拼接成完整网址

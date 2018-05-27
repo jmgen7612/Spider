@@ -17,9 +17,6 @@ class HtmlParser(object):
         else:
             return None
 
-
-
-
     def parser_json(self,page_url,response):
         '''
         解析响应
@@ -33,20 +30,27 @@ class HtmlParser(object):
         if result!=None:
             #json模块加载字符串
             value = json.loads(result)
+            print(value)
             try:
                 isRelease = value.get('value').get('isRelease')
-            except Exception,e:
-                print e
+                #响应中包含isRelease关键字
+            except Exception:
+                print(Exception)
                 return None
             if isRelease:
+                #isRelease为真的情况处理，即将上映和已上映的
                 if value.get('value').get('hotValue')==None:
+                    #不包含hotValue，表示已上映的电影
+                    print("$$$$$$$$$$$$$$$$$$$$已上映$$$$$$$$$$$$$$$$$$$$$$$$")
                     return self._parser_release(page_url,value)
                 else:
+                    #包含hotValue，表示即将上映
+                    print("###################即将上映#######################")
                     return self._parser_no_release(page_url,value,isRelease=2)
             else:
+                #还有很久才上映的电影
+                print("@@@@@@@@@@@@@@@@@@@@@很久才上映@@@@@@@@@@@@@@@@@@@@@@@")
                 return self._parser_no_release(page_url,value)
-
-
 
     def _parser_release(self,page_url,value):
         '''
@@ -88,7 +92,7 @@ class HtmlParser(object):
             ShowDays = boxOffice.get('ShowDays')
             try:
                 Rank = boxOffice.get('Rank')
-            except Exception,e:
+            except Exception:
                 Rank=0
             #将提取其中的内容进行返回
             return (MovieId,movieTitle,RatingFinal,
@@ -97,8 +101,8 @@ class HtmlParser(object):
                     TotalBoxOffice+TotalBoxOfficeUnit,
                     TodayBoxOffice+TodayBoxOfficeUnit,
                     Rank,ShowDays,isRelease )
-        except Exception,e:
-            print e,page_url,value
+        except Exception:
+            print(Exception,page_url,value)
             return None
 
     def _parser_no_release(self,page_url,value,isRelease = 0):
@@ -132,21 +136,20 @@ class HtmlParser(object):
             AttitudeCount =  movieRating.get('AttitudeCount')
             try:
                 Rank = value.get('value').get('hotValue').get('Ranking')
-            except Exception,e:
+            except Exception:
                 Rank = 0
             return (MovieId,movieTitle,RatingFinal,
                     ROtherFinal,RPictureFinal,RDirectorFinal,
                     RStoryFinal, Usercount,AttitudeCount,u'无',
                     u'无',Rank,0,isRelease )
-        except Exception,e:
-            print e,page_url,value
+        except Exception:
+            print(Exception,page_url,value)
             return None
-
 
 if __name__=='__main__':
     downloader = HtmlDownloader()
     output = DataOutput()
-    content = downloader.download('http://theater.mtime.com/China_Beijing/')
+    content = downloader.download('http://theater.mtime.com/China_Guangdong_Province_Shenzen/')
     HtmlParser().parser_url('',content)
 #     content = downloader.download('http://service.library.mtime.com/Movie.api?Ajax_CallBack=true&Ajax_CallBackType=Mtime.Library.Services&Ajax_CallBackMethod=GetMovieOverviewRating&Ajax_CrossDomain=1&Ajax_RequestUrl=http%3A%2F%2Fmovie.mtime.com%2F108737%2F&t=201611132231493282&Ajax_CallBackArgument0=108737')
 #     # print content

@@ -14,7 +14,7 @@ class SpiderMan(object):
         #添加入口URL
         self.manager.add_new_url(root_url)
         #判断url管理器中是否有新的url，同时判断抓取了多少个url
-        while(self.manager.has_new_url() and self.manager.old_url_size()<100):
+        while(self.manager.has_new_url() and self.manager.old_url_size()<5):
             try:
                 #从URL管理器获取新的url
                 new_url = self.manager.get_new_url()

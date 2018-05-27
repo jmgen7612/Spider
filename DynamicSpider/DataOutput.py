@@ -2,8 +2,8 @@
 import sqlite3
 class DataOutput(object):
     def __init__(self):
-        self.cx = sqlite3.connect("MTime.db")
-        self.create_table('MTime')
+        self.cx = sqlite3.connect("movie.sqlite3")
+        self.create_table('movie')
         self.datas=[]
 
     def create_table(self,table_name):
@@ -42,7 +42,7 @@ class DataOutput(object):
             return
         self.datas.append(data)
         if len(self.datas)>10:
-            self.output_db('MTime')
+            self.output_db('movie')
 
     def output_db(self,table_name):
         '''
@@ -65,7 +65,7 @@ class DataOutput(object):
         :return:
         '''
         if len(self.datas)>0:
-            self.output_db('MTime')
+            self.output_db('movie')
         self.cx.close()
 
 
