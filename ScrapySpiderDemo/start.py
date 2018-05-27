@@ -1,1 +1,0 @@
-#!/usr/bin/env python3# -*- coding: utf-8 -*-#@file   :start.py#@time   :2018/5/24 23:35#@Author :jmgen#@Version:1.0#@Desc   :from scrapy import cmdlinestr="scrapy crawl dmoz"cmdline.execute(str.split())

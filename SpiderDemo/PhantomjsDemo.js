@@ -1,1 +1,0 @@
-var page = require('webpage').create();page.viewportSize = { width: 1024, height: 768 };page.clipRect = { top: 0, left: 0, width: 512, height: 256 };page.open('https://www.baidu.com/', function(status) {  console.log("Status: " + status);  if(status === "success") {    page.render('qiye.pdf');  }  phantom.exit();});
